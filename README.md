@@ -1,6 +1,6 @@
 # 🧠 Mental Health Risk Prediction App
 
-![Mental Health](https://github.com/sushant2333/Mental-Health-Risk-Prediction/tree/main)
+<img src="[assets/screenshot.png]" alt="App Screenshot" width="600"/>
 
 This is a Streamlit web application that predicts the **risk of depression or mental health issues** based on user input. It uses a trained machine learning model (`best_model.pkl`) and provides:
 - A simple UI for input
