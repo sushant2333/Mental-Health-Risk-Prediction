@@ -11,175 +11,144 @@ This is a Streamlit web application that predicts the **risk of depression or me
 
 ---
 
-!(assets/screenshot.png) 
+<table>
+  <tr>
+    <td><img src="assets/Screenshot 2025-07-31 005040.png" width="300"/></td>
+    <td><img src="assets/Screenshot 2025-07-31 005051.png" width="300"/></td>
+  </tr>
+ <tr>
+    <td><img src="assets/Screenshot 2025-07-31 005103.png" width="300"/></td>
+    <td><img src="assets/Screenshot 2025-07-31 005119.png" width="300"/></td>
+  </tr>
+ <tr>
+    <td><img src="assets/Screenshot 2025-07-31 005136.png" width="300"/></td>
+    <td><img src="assets/Screenshot 2025-07-31 005151.png" width="300"/></td>
+  </tr>
+</table>
 
 ---
 
 ## 📁 Project Structure
 
+```
 Mental-Health-Risk-Prediction/
-├── app.py # Streamlit app
-├── best_model.pkl # Trained ML model
-├── train.csv # Training dataset
-├── test.csv # Test dataset
-├── test_predictions.csv # Optional prediction output
-├── prediction_report.html # HTML report after prediction
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
-
-yaml
-Copy
-Edit
+├── app.py                                             # Streamlit app
+├── best_model.pkl                                     # Trained ML model
+├── train.csv                                          # Training dataset
+├── test.csv                                           # Test dataset
+├── test_predictions.csv                               # Optional prediction output
+├── prediction_report.html                             # HTML report after prediction
+├── requirements.txt                                   # Python dependencies
+└── README.md                                          # Project documentation
+```
 
 ---
 
-## ⚙️ Installation
-
-
----
 
 ## ⚙️ Installation
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/mental-health-predictor.git
-cd mental-health-predictor
+git clone https://github.com/sushant2333/Mental-Health-Risk-Prediction.git
+cd Mental-Health-Risk-Prediction
+```
 
-cd mental-health-predictor
-(Optional) Create and activate a virtual environment
-
-bash
-Copy
-Edit
+2. **Create and activate a virtual environment**
+```
 python -m venv venv
 venv\Scripts\activate     # On Windows
 # OR
 source venv/bin/activate  # On macOS/Linux
-Install dependencies
-
-bash
-Copy
-Edit
+```
+3. **Install dependencies**
+```
 pip install -r requirements.txt
-🧪 Run the App
-bash
-Copy
-Edit
+```
+4. **🧪 Run the App**
+```
 streamlit run app.py
+```
+
 The app will open in your default web browser at http://localhost:8501
+
+---
 
 🧠 Model Details
 The model is trained on features like:
 
-Age, Gender, CGPA
-
-Academic and Work Pressure
-
-Sleep Duration
-
-Study & Job Satisfaction
-
-Suicidal Thoughts
-
-Work/Study Hours
-
-Family History of Mental Illness
-
-Dietary Habits
-
-Preprocessing includes:
-
-Label Encoding for categorical features
-
-Standard Scaling for numerical features
-
-Model type: RandomForestClassifier (or your actual model)
-
-📈 Features
-Predicts high or low mental health risk
-
-Interactive UI with sliders and dropdowns
-
-Saves an HTML report of each prediction
-
-SHAP explainability: shows top contributing features
-
-Visual summaries:
-
-Bar chart for stress and satisfaction levels
-
-Pie chart of time spent (sleep/study/other)
-
-Optional data visualizations from train.csv
-
-📦 Dependencies
-streamlit
-
-pandas
-
-numpy
-
-scikit-learn
-
-shap
-
-matplotlib
-
-seaborn
-
-joblib
-
-Install using:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-📌 TODO / Improvements
- Add option to download report as PDF
-
- Deploy to Streamlit Cloud for public access
-
- Support user authentication and session history
-
- Store prediction history in local database (CSV or SQLite)
-
- Add Hugging Face or cloud-based model loading
-
-📝 License
-This project is licensed under the MIT License.
-
-🙏 Acknowledgments
-Streamlit for the UI framework
-
-SHAP for model interpretability
-
-Kaggle & public datasets for mental health
-
-Scikit-learn for training and preprocessing
-
-👤 Author
-Sushant Kumar
-Freelance ML Engineer | India
-📧 basiccoding.ml@gmail.com
-🔗 LinkedIn (replace with your actual link)
-🐍 Passionate about ML, NLP, and building intelligent systems.
-
-yaml
-Copy
-Edit
+- Age, Gender, CGPA
+- Academic and Work Pressure
+- Sleep Duration
+- Study & Job Satisfaction
+- Suicidal Thoughts
+- Work/Study Hours
+- Family History of Mental Illness
+- Dietary Habits
 
 ---
 
-Let me know if you also want:
-- `requirements.txt` generated from your project
-- Help deploying this to Streamlit Cloud
+Preprocessing includes:
 
+- Label Encoding for categorical features
+- Standard Scaling for numerical features
+  
+---
 
+Model type: XGBoost 
 
+📈 Features
 
+- Predicts high or low mental health risk
+- Interactive UI with sliders and dropdowns
+- Saves an HTML report of each prediction
+- SHAP explainability: shows top contributing features
 
+---
 
+Visual summaries:
 
+- Bar chart for stress and satisfaction levels
+- Pie chart of time spent (sleep/study/other)
+- Optional data visualizations from train.csv
 
-Ask ChatGPT
+---
+
+📦 Dependencies
+
+- streamlit
+- pandas
+- numpy
+- scikit-learn
+- shap
+- matplotlib
+- seaborn
+- joblib
+
+Install using:
+
+```
+pip install -r requirements.txt
+```
+---
+
+📌 TODO / Improvements
+
+- Add option to download report as PDF
+- Deploy to Streamlit Cloud for public access
+- Support user authentication and session history
+- Store prediction history in local database (CSV or SQLite)
+- Add Hugging Face or cloud-based model loading
+
+--- 
+
+🙏 Acknowledgments
+
+- Streamlit for the UI framework
+- SHAP for model interpretability
+- Kaggle & public datasets for mental health
+- Scikit-learn for training and preprocessing
+
+👤 Author : Sushant Kumar Freelance ML Engineer <br>
+🌍 India <br>
+📧 [sushantsingh2333@gmail.com](mailto:sushantsingh2333@gmail.com) <br>
+🔁 Passionate about ML, NLP, and building intelligent systems.
