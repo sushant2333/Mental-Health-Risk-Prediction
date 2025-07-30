@@ -1,6 +1,6 @@
 # 🧠 Mental Health Risk Prediction App
 
-<img src="[assets/screenshot.png]" alt="App Screenshot" width="600"/>
+<img src="mental_health.jpg" alt="App Screenshot" width="200"/>
 
 This is a Streamlit web application that predicts the **risk of depression or mental health issues** based on user input. It uses a trained machine learning model (`best_model.pkl`) and provides:
 - A simple UI for input
@@ -10,8 +10,6 @@ This is a Streamlit web application that predicts the **risk of depression or me
 - Report generation in HTML
 
 ---
-
-
 
 !(assets/screenshot.png) 
 
