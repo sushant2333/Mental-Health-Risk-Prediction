@@ -3,3 +3,39 @@ __pycache__/
 *.html
 .env
 
+# Dataset files
+*.csv
+*.xlsx
+*.xls
+train.csv
+test.csv
+prediction_report.csv
+
+# Model files (optional - you might want to keep these)
+# *.pkl
+# alternate_model.pkl
+# best_model.pkl
+
+# Large files and data
+*.zip
+*.tar.gz
+*.rar
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
